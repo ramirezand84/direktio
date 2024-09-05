@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    padding: 10px 20px 10px 0;
+    justify-content: space-between;
+    >div {
+        display: flex;
+        width: 30%;
+        align-items: center;
+        i {
+            color: $black;
+            margin-right: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 30px;
+            color: $black;
+        }
+    }
+    >nav {
+        display: flex;
+        align-items: center;
+        .item-header {
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+            padding: 10px;
+            margin: 0 5px;
+            color: $primary-color;
+            position: relative;
+            border: 1px solid $font-gray;
+            box-shadow: 0px 0px 2px 0px rgb(0 0 0);
+            span {
+                border-radius: 50%;
+                position: absolute;
+                display: block;
+                height: 12px;
+                width: 12px;
+                color: white;
+                font-size: 0.7em;
+                background-color: $primary-color;
+                top: -5px;
+                right: -5px;
+                text-align: center;
+                padding: 3px;
+            }
+            &.active {
+                color: $gray;
+                span {
+                    background-color: $gray;
+                }
+            }
+        }
+        .info-user {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            >div {
+                overflow: hidden;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                border: solid $primary-color;
+                img {
+                    width: 50px;
+                    transform: translateX(-10px);
+                }
+            }
+            >p {
+                padding: 10px;
+                margin: 0;
+                color: $primary-color;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                background: $third-color;
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

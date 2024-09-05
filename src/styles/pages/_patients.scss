@@ -1,0 +1,79 @@
+.section-patiens {
+    .header-section,
+    .searchbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .searchbar {
+        >div {
+            position: relative;
+        }
+        input {
+            padding: 10px 35px 10px 20px;
+            color: $gray;
+            background: white;
+            border: none;
+            border-radius: 20px;
+        }
+        .ico-search {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $font-gray;
+            font-size: 16px;
+            display: block;
+        }
+        a {
+            border-radius: 50%;
+            padding: 8px;
+            margin-left: 10px;
+            background: $secondary-color;
+            i {
+                color: white;
+            }
+        }
+    }
+}
+
+.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: $gray;
+    background: white;
+    .actions {
+        text-align: center;
+        i {
+            margin: 0 5px;
+        }
+    }
+}
+
+.patient-table th.checkbox-header,
+.patient-table td.checkbox-cell {
+    width: 50px;
+    /* Ajusta el ancho según tus necesidades */
+    text-align: center;
+    /* Centra el checkbox en la celda */
+}
+
+.patient-table th,
+.patient-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 0.8em;
+}
+
+.patient-table tr:nth-child(even) {
+    background-color: $table-bg;
+}
+
+.patient-table .status {
+    color: $primary-color;
+    &.row-status {
+        color: $secondary-color;
+    }
+}

@@ -1,0 +1,60 @@
+aside {
+    padding: 20px 0;
+    position: relative;
+    .logo {
+        width: 80%;
+        margin: 0 auto;
+    }
+    h2 {
+        padding-left: 20px;
+    }
+    .close-menu {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav {
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                width: calc(100% - 40px);
+                padding: 20px;
+                &:hover,
+                &.active {
+                    color: white;
+                    background: rgb(43, 193, 85);
+                    background: linear-gradient(90deg, rgba(43, 193, 85, 1) 41%, rgba(114, 236, 150, 1) 100%);
+                    border-bottom-right-radius: 40px;
+                    i,
+                    a {
+                        color: white;
+                    }
+                }
+                &.active {
+                    font-weight: bold;
+                }
+                i {
+                    color: $gray;
+                    font-size: 1em;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .copyright {
+        position: absolute;
+        bottom: 20px;
+        padding: 0 20px;
+        width: 100%;
+        font-size: 0.6em;
+        color: $font-gray;
+        span {
+            display: block;
+            i {
+                color: red;
+            }
+        }
+    }
+}
